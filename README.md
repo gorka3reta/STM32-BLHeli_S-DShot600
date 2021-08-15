@@ -16,3 +16,5 @@ In the code a timer is used to generate the signal and another timer is used to 
 The APB bus clock, timer's prescaler and the autoreload value have been used to obtain a 1,67 us PWM singnal. You can use the value you want only if the result remains in 1,67 us. To generate a Dshot150, Dshot300 or Dshot1200 signal change that value. This example is made for Timer 1 Channel 1. But if more outputs are needed just configure more timers and channels as mine and add the needed code.
 
 Download the .rar to download the whole project. There main code is published as a previous view.
+
+I'm sorry for the upload format but I'm new in GitHub, I'll try to improve in the next project :)
