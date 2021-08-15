@@ -7,6 +7,6 @@ https://bluerobotics.com/wp-content/uploads/2018/10/BLHeli_S-manual-SiLabs-Rev16
 Information about Dshot600 protocol:
 https://blck.mn/2016/11/dshot-the-new-kid-on-the-block/
 
-As you may have noticed the Dshot600 frame is composed by a codified 16 bits signal. The first 11 bits are the throttle, the next one is the telemetry bit (not used in this project) and the last 4 bits are the checksum (a kind of CRC if you prefer). Each bit is a PWM signal of 1,67 us and depending on its duty cycle its recognized as a logic '0' or a logil '1'. In this project a timer is used to send a PWM signal of different duty cylces to build the main frame. The DMA is used to archive this purpose, this way this method is non blocking.
+As you may have noticed the Dshot600 frame is composed by a codified 16 bits signal. The first 11 bits are the throttle, the next one is the telemetry bit (not used in this project) and the last 4 bits are the checksum (a kind of CRC if you prefer). Each bit is a PWM signal of 1,67 us and depending on its duty cycle its recognized as a logic '0' or a logic '1'. In this project a timer is used to send a PWM signal of different duty cylces to build the main frame. The DMA is used to archive this purpose, this way this method is non blocking.
 
 This project has been checked in a STM32F407VGT06 development board but it should work for any STM32 microcontroller by adjusting some stuff (libraries, HAL functions...) but the idea is exactly the same.
